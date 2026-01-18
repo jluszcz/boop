@@ -18,9 +18,12 @@ function main(state) {
   }
   
   const lines = text.split('\n');
-  
+
+  // Filter out blank lines
+  const nonBlankLines = lines.filter(line => line.trim() !== '');
+
   // Sort lines, ignoring leading "The " for comparison
-  const sortedLines = lines.sort((a, b) => {
+  const sortedLines = nonBlankLines.sort((a, b) => {
     // Remove leading "The " (case insensitive) for sorting comparison
     const aNormalized = a.replace(/^the\s+/i, '');
     const bNormalized = b.replace(/^the\s+/i, '');
