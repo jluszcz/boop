@@ -1,7 +1,5 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
-
 ## Project Overview
 
 A collection of custom scripts for [Boop](https://github.com/IvanMathy/Boop), a macOS scratchpad that runs small text
